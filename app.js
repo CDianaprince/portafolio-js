@@ -44,6 +44,30 @@ function PageTransition(){
 
 PageTransition();
 
+//Portafolio filter
 
+let list = document.querySelectorAll('.list');
+let portafolioItem = document.querySelectorAll('.portafolio-item');
+
+for (let i = 0; i<list.length; i++){
+  list[i].addEventListener('click', function(){
+    for(let j = 0; j<list.length; j++){
+      list[j].classList.remove('activo');
+    }
+    this.classList.add('activo');
+
+      let dataFilter = this.getAttribute('data-filter');
+
+      for( let k = 0; k<portafolioItem.length; k++){
+        portafolioItem[k].classList.remove('activo');
+        portafolioItem[k].classList.add('hide');
+
+        if(portafolioItem[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+          portafolioItem[k].classList.remove('hide');
+          portafolioItem[k].classList.add('activo');
+        }
+      }
+  })
+}
 
 

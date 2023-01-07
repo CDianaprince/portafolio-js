@@ -217,7 +217,7 @@
           </div>
         <div class="contenedor">
             
-            <header>
+            <div class="header">
                 <div class="logo">
                     <h3>Diana Prince</h3>
                     <p>Web Developer</p>
@@ -225,23 +225,139 @@
                 <!--<form action="">
                     <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Search">
                 </form>-->
-                <div class="categorias items" id="items">
+                <!--<div class="categorias items" id="items">
                     <a href="#" class="activo" data-name="all">All</a>
                     <a href="#" data-name="cards">Cards</a>
                     <a href="#" data-name="web">Web</a>
                     <a href="#" data-name="Blogs">Blogs</a>
                     <a href="#" data-name="js">JS proyects</a>
-                </div>
-            </header>
-            <div class="portafolios">
-                <div class="portafolio-item">
+                </div>-->
+                <ul class="categorias items" id="items">
+                    <li class="list activo" data-filter="all">All</li>
+                    <li class="list" data-filter="cards">Cards</li>
+                    <li class="list" data-filter="web">Web</li>
+                    <li class="list" data-filter="Blogs">Blogs</li>
+                    <li class="list" data-filter="js">JS proyects</li>
+                </ul>
+            </div>
+            <div class="portafoliot">
+                <div class="portafolio-item" data-item="cards">
                     <div class="image">
                         <img src="./assets/img/card1.jpg" alt="card1">
                     </div>
-                    <div class="hover-item">
+                    <div class="hover-items">
                         <h3>Proyect Source</h3>
                         <div class="icons">
                             <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="cards">
+                    <div class="image">
+                        <img src="./assets/img/card2.jpg" alt="card2">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="web">
+                    <div class="image">
+                        <img src="./assets/img/web1.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="web">
+                    <div class="image">
+                        <img src="./assets/img/web2.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="web">
+                    <div class="image">
+                        <img src="./assets/img/web3.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="Blogs">
+                    <div class="image">
+                        <img src="./assets/img/blog1.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="Blogs">
+                    <div class="image">
+                        <img src="./assets/img/blog2.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="Blogs">
+                    <div class="image">
+                        <img src="./assets/img//teclado.webp" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="js">
+                    <div class="image">
+                        <img src="./assets/img/card1.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portafolio-item" data-item="js">
+                    <div class="image">
+                        <img src="./assets/img/card1.jpg" alt="card1">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Proyect Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-solid fa-code"></i></a>
                         </div>
                     </div>
                 </div>
