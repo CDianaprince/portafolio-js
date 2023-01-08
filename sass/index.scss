@@ -536,11 +536,30 @@ section{
             display: flex;
             :last-child{
                 margin-left: 1.5rem;
+                
             }
         }
-        .submit-btn{
+        .submit-btn1{
             display: flex;
-            justify-content: flex-start;
+            justify-content: flex-start;     
+        }
+        .contact-form{
+            .main-btn1{
+                background-color: var(--color-primary);
+                color: var(--color-white);
+                cursor: pointer
+                ;
+                outline: none;
+                border-radius: 30px;
+                color: inherit;
+                font-weight: 700;
+                text-transform: uppercase;
+                position: relative;
+                border: 1px solid var(--color-secondary);
+                padding: 1rem;
+                text-align: center;
+                width: 10rem;
+            }       
         }
 
     }

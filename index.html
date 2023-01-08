@@ -429,26 +429,30 @@
                     </div>
                 </div>
                 <div class="right-contact">
-                    <form action="" class="contact-form">
+                    <span id="error"></span>
+                    <form action="" id="formulario" class="contact-form">
                         <div class="input-control i-c-2">
-                            <input type="tex" required placeholder="YOUR NAME">
-                            <input type="email" required placeholder="YOUR EMAIL">
+                            
+                            <input id="name" type="tex" placeholder="YOUR NAME">
+                            <span id="error"></span>
+                            <input id="email" type="email"  placeholder="YOUR EMAIL">
                         </div>
+                        
                         <div class="input-control">
-                            <input type="tex" required placeholder="ENTER SUBJECT">
+                            <input id="subject" type="tex" placeholder="ENTER SUBJECT">
                             
                         </div>
+                        
                         <div class="input-control">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Message here..."></textarea>
+                            <textarea name="" id="textarea" cols="15" rows="8" placeholder="Message here..."></textarea>
                             
                         </div>
-                        <div class="submit-btn">
-                            <a href="#" class="main-btn">
-                                <span class="btn-text">Dowload CV</span>
-                                <span class="btn-icon"><i i class="fas fa-download"></i></i></span>
-                            </a>
-                        </div>
+                        <!--<div class="submit-btn1">-->
+                            <input type="submit" class="main-btn1" value = 'Submit'>
+                            
+                        <!--</div>-->
                     </form>
+                    
                 </div>
                 
             </div>

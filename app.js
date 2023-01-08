@@ -34,13 +34,7 @@ function PageTransition(){
     }
     
   })
-
-
-
-
 }
-
-
 
 PageTransition();
 
@@ -69,5 +63,76 @@ for (let i = 0; i<list.length; i++){
       }
   })
 }
+
+//validacion y actualizacion de la forma
+
+let nombre = document.getElementById('name');
+let correo = document.getElementById('email');
+let asunto = document.getElementById('subject');
+let mensaje = document.getElementById('textarea');
+let error = document.getElementById('error');
+error.style.color = 'var(--color-grey-3)';
+
+
+/*function enviarFormulario(){
+  console.log('enviando formulario..');
+
+  let mensajesError = [];
+
+  if(nombre.value === null || nombre.value === ''){
+    mensajesError.push(' Ingresa tu Nonbre');
+
+  }
+
+  if(correo.value === null || correo.value === ''){
+    mensajesError.push(' Ingresa tu Correo');
+  } 
+  if(asunto.value === null || asunto.value === ''){
+    mensajesError.push(' Ingresa tu Asunto');
+    
+  }
+
+  if(mensaje.value === null || mensaje.value === ''){
+    mensajesError.push(' Ingresa tu Mensaje');
+    
+  }
+
+  errorElement.innerHTML = mensajesError.join(',  ');
+
+  return false
+}*/
+
+let form = document.getElementById('formulario');
+
+form.addEventListener('submit', (e) => {
+  let mensajesError = [];
+  if(nombre.value === null || nombre.value === ''){
+    mensajesError.push('Name is requiered');
+  }
+  
+  
+  if(asunto.value === null || asunto.value === ''){
+    mensajesError.push('Subject is requiered');
+    
+  }
+  
+  if(mensaje.value === null || mensaje.value === ''){
+    mensajesError.push('message is requiered');
+    
+  }
+  
+  if(correo.value === null || correo.value === ''){
+    mensajesError.push('Email is requiered');
+    
+  }
+  
+  if(mensajesError.length > 0){
+    e.preventDefault();
+    error.innerText = mensajesError.join(', ')
+  }
+});
+
+//funcion para actualizar DOM
+
 
 
